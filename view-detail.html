@@ -167,7 +167,7 @@
                     class="border-b-white border-b-2 border-b-transparent hover:border-b-white transition-all"
                   >
                     <a
-                      href="/"
+                      href="index.html"
                       class="block py-2 px-3 rounded md:border-0 md:p-0 dark:text-white"
                     >
                       Home
@@ -327,12 +327,46 @@
         <div class="px-2 lg-px-0 mr-2 flex flex-col items-center mb-6">
           <div class="max-w-[400px] flex flex-col gap-2">
             <img
-              class="max-w-[400px] aspect-[6/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              class="max-w-[400px] aspect-[6/9] object-cover rounded-md cursor-pointer"
               src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
               alt="Book Cover"
             />
-
-            <div class="flex rounded-md shadow-sm gap-2" role="group">
+            <div class="grid grid-cols-4 gap-2">
+              <img
+                class="w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              />
+              <img
+                class="w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              />
+              <img
+                class="w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              />
+              <div
+                class="relative w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out"
+              >
+                <button
+                  class="absolute w-full h-full bg-gray-900/60 hover:bg-gray-900/20 transition-all duration-300 rounded-lg flex items-center justify-center"
+                >
+                  <span class="text-xl font-medium text-white">+7</span>
+                  <div
+                    id="download-image"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Download image
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </button>
+                <img
+                  src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+                  class="rounded-lg w-full aspect-[1/1]"
+                />
+              </div>
+            </div>
+            <div class="w-full flex rounded-md shadow-sm gap-2" role="group">
               <button
                 type="button"
                 class="flex-1 inline-flex gap-2 items-center justify-center px-4 py-1 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-md hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
@@ -378,7 +412,7 @@
                   <path d="M19 21H5" />
                 </svg>
                 <div>
-                  <p class="whitespace-nowrap">Downloads</p>
+                  <p class="whitespace-nowrap">Download PDF</p>
                   <p>(9567)</p>
                 </div>
               </button>
@@ -387,12 +421,12 @@
         </div>
         <div>
           <div
-            class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+            class="uppercase tracking-wide text-sm text-primary font-semibold"
           >
             E-Book
           </div>
           <h1
-            class="block mt-1 text-2xl leading-tight font-medium text-black mb-2"
+            class="text-2xl text-gray-800 dark:text-gray-100 block mt-1 text-2xl leading-tight font-medium mb-2"
           >
             Your subtitle or any other text goes here Implementation of Title,
             Subtitle and Author name as well as any other text you like to the
@@ -401,93 +435,102 @@
           <div class="flex flex-col gap-2">
             <div class="flex nowrap">
               <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 font-semibold border-r border-neutral-700 pr-5 mr-5"
+                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
               >
                 Author
               </p>
-              <p class="text-sm text-gray-600">Long Soeng Co.</p>
+              <p class="text-sm text-gray-600 dark:text-gray-200">
+                Long Soeng Co.
+              </p>
             </div>
             <div class="flex nowrap">
               <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 font-semibold border-r border-neutral-700 pr-5 mr-5"
+                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
               >
                 ISBN
               </p>
-              <p class="text-sm text-gray-600">9780415002240</p>
+              <p class="text-sm text-gray-600 dark:text-gray-200">
+                9780415002240
+              </p>
             </div>
             <div class="flex nowrap">
               <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 font-semibold border-r border-neutral-700 pr-5 mr-5"
+                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
               >
                 Publisher
               </p>
-              <p class="text-sm text-gray-600">Routledge</p>
+              <p class="text-sm text-gray-600 dark:text-gray-200">Routledge</p>
             </div>
             <div class="flex nowrap">
               <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 font-semibold border-r border-neutral-700 pr-5 mr-5"
+                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
               >
                 Year
               </p>
-              <p class="text-sm text-gray-600">1988</p>
+              <p class="text-sm text-gray-600 dark:text-gray-200">1988</p>
             </div>
             <div class="flex nowrap items-center">
               <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 font-semibold border-r border-neutral-700 pr-5 mr-5"
+                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
               >
                 Page Count
               </p>
-              <p class="text-sm text-gray-600">322</p>
+              <p class="text-sm text-gray-600 dark:text-gray-200">322</p>
             </div>
             <div class="flex nowrap">
               <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 font-semibold border-r border-neutral-700 pr-5 mr-5"
+                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
               >
                 Type
               </p>
-              <p class="text-sm text-gray-600">សៀវភៅ / Book</p>
+              <p class="text-sm text-gray-600 dark:text-gray-200">
+                សៀវភៅ / Book
+              </p>
             </div>
             <div class="flex nowrap">
               <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 font-semibold border-r border-neutral-700 pr-5 mr-5"
+                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
               >
                 Language
               </p>
-              <p class="text-sm text-gray-600">English</p>
+              <p class="text-sm text-gray-600 dark:text-gray-200">English</p>
             </div>
             <div class="flex nowrap">
               <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 font-semibold border-r border-neutral-700 pr-5 mr-5"
+                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
               >
                 Education
               </p>
-              <p class="text-sm text-gray-600">London, England</p>
+              <p class="text-sm text-gray-600 dark:text-gray-200">
+                London, England
+              </p>
             </div>
           </div>
 
           <div class="mt-8">
-            <h2 class="text-xl font-semibold text-gray-900">Description</h2>
-            <p class="mt-2 text-gray-600">
+            <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+              Description
+            </h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
               Upgrade to paperback for just
               <span class="font-bold">$100</span> extra. Get matching spine and
               back cover for your book.
-              <a href="#" class="text-indigo-500 underline">Contact me</a> for
+              <a href="#" class="text-primary underline">Contact me</a> for
               upgrading or drop in a line when you place the order.
             </p>
-            <p class="mt-2 text-gray-600">
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
               Purchase will include hi resolution
               <span class="font-bold">eBook cover design</span> ready to upload
               to Amazon Kindle, B&N Nook books and Smashwords.
             </p>
-            <p class="mt-2 text-gray-600">
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
               Implementation of Title, Subtitle and Author name as well as any
               other text you like to the
               <span class="font-bold">book cover design</span>.
             </p>
-            <p class="mt-2 text-gray-600">
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
               Exclusive
-              <a href="#" class="text-indigo-500 underline"
-                >premade book covers</a
+              <a href="#" class="text-primary underline">premade book covers</a
               >, designed using only Standard license royalty-free stock photos.
               Copyrights to the design transferred to client for all purchases.
             </p>
@@ -759,7 +802,7 @@
                     <li class="mb-4">
                       <button
                         type="button"
-                        class="bg-transparent hover:bg-white dark:hover:bg-gray-400 border-2 border-white dark:border-gray-400 focus:ring-4 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center gap-2 hover:text-gray-600 dark:hover:text-white"
+                        class="bg-transparent hover:bg-white dark:hover:bg-gray-400 border-2 border-white dark:border-gray-400 focus:ring-4 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center gap-2 hover:text-gray-600 dark:hover:text-white hover:scale-110 transition-all"
                       >
                         <img src="./icons/mobile-app.png" alt="" class="h-8" />
 
@@ -783,7 +826,7 @@
                       class="hover:text-gray-900 dark:hover:text-white"
                     >
                       <img
-                        class="h-[55px] aspect-square object-contain rounded-full border border-white"
+                        class="h-[55px] aspect-square object-contain rounded-full border border-white hover:scale-110 transition-all"
                         src="/icons/facebook.png"
                         alt="Facebook page"
                       />
@@ -794,7 +837,7 @@
                       class="hover:text-gray-900 dark:hover:text-white"
                     >
                       <img
-                        class="h-[55px] aspect-square object-contain rounded-full border border-white"
+                        class="h-[55px] aspect-square object-contain rounded-full border border-white hover:scale-110 transition-all"
                         src="/icons/youtube.png"
                         alt="Facebook page"
                       />
@@ -805,7 +848,7 @@
                       class="hover:text-gray-900 dark:hover:text-white"
                     >
                       <img
-                        class="h-[55px] aspect-square object-contain rounded-full border border-white"
+                        class="h-[55px] aspect-square object-contain rounded-full border border-white hover:scale-110 transition-all"
                         src="/icons/telegram.png"
                         alt="Facebook page"
                       />
@@ -816,7 +859,7 @@
                       class="hover:text-gray-900 dark:hover:text-white"
                     >
                       <img
-                        class="h-[55px] aspect-square object-contain rounded-full border border-white"
+                        class="h-[55px] aspect-square object-contain rounded-full border border-white hover:scale-110 transition-all"
                         src="/icons/www.png"
                         alt="Facebook page"
                       />
