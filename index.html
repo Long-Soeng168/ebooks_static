@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ebooks</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Start JS -->
+    <script src="js/tailwind34.js"></script>
+    <script src="js/darkModeHead.js"></script>
+    <!-- <script src="js/tailwind.config.js"></script> -->
     <script>
       tailwind.config = {
         darkMode: "class", // Enables dark mode based on class
@@ -22,43 +25,28 @@
         },
       };
     </script>
-    <script src="js/darkModeHead.js"></script>
-    <style>
-      .mySwiper {
-        width: 100%;
-        /* height: 100%; */
-        aspect-ratio: 30/8;
-      }
+    <!-- End Start JS -->
 
-      .swiper-slide-item {
-        text-align: center;
-        font-size: 18px;
-        /* background: #fff; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide-img {
-        display: block;
-        width: 100%;
-        /* aspect-ratio: 21/9 */
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
+    <!-- Start CSS -->
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/pdfview.css" />
+    <link rel="stylesheet" href="css/audioplayer.css" />
+    <link rel="stylesheet" href="/css/glightbox.css" />
+    <!-- end Start CSS -->
   </head>
   <body class="dark:bg-gray-800 w-full overflow-x-hidden">
     <!-- Head -->
     <div>
-      <div class="relative w-full bg-blue-400">
-        <!-- Banner Top -->
+      <div class="relative w-full bg-primary">
         <img
-          class="w-full max-h-[300px] dark:saturate-500"
-          src="/images/newbanner.png"
+          class="max-w-screen-xl mx-auto w-full max-h-[300px] dark:saturate-500"
+          src="/images/bannerLight.png"
           alt=""
         />
-        <header class="absolute left-0 right-0 bottom-0 z-[30] bg-transparent">
+
+        <header
+          class="md:absolute left-0 right-0 bottom-0 z-[30] bg-transparent"
+        >
           <div class="bg-primary-400 px-2 text-white border-gray-200 z-20">
             <div
               class="flex flex-wrap items-center justify-end max-w-screen-xl mx-auto"
@@ -137,7 +125,7 @@
                     data-drawer-show="drawer-body-scrolling"
                     data-drawer-body-scrolling="true"
                     aria-controls="drawer-body-scrolling"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 hover:text-gray-500 rounded-lg min-[1280px]:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 hover:text-gray-500 rounded-lg min-[1280px]:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                   >
                     <span class="sr-only">Open main menu</span>
                     <svg
@@ -271,9 +259,9 @@
     </div>
     <!-- End Head -->
 
-    <!-- Search -->
+    <!-- Start Search -->
     <div
-      class="bg-gradient-to-r from-[#377eb4] dark:from-gray-600 to-transparent p-2"
+      class="bg-gradient-to-r from-primary dark:from-primary to-transparent p-2"
     >
       <div class="max-w-screen-xl mx-auto">
         <form class="w-full" action="search_book.html">
@@ -313,30 +301,37 @@
               >
                 <li>
                   <a
-                    href="#"
+                    href="./index.html"
                     class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Mockups</a
+                    >E-Publications</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="./viewDetailVideo.html"
                     class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Templates</a
+                    >Videos</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="./viewDetailAudio.html"
                     class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Design</a
+                    >Audios</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="./viewDetailImage.html"
                     class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Logos</a
+                    >Images</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./viewDetailBulletin.html"
+                    class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Bulletins</a
                   >
                 </li>
               </ul>
@@ -432,12 +427,12 @@
     </div>
     <!-- End Slide Show -->
 
-    <!-- Database -->
+    <!-- Start Database -->
     <div class="max-w-screen-xl mx-auto mt-6">
       <p
         class="text-2xl text-gray-700 dark:text-white p-2 xl:p-0 font-bold uppercase"
       >
-        Database
+        Databases
       </p>
       <!-- Icon Blocks -->
       <div class="">
@@ -467,7 +462,7 @@
           </a>
           <a
             class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
-            href="#"
+            href="./index.html"
           >
             <div
               class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
@@ -488,7 +483,7 @@
           </a>
           <a
             class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
-            href="viewDetailVideo.html"
+            href="./videos.html"
           >
             <div
               class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
@@ -509,7 +504,7 @@
           </a>
           <a
             class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
-            href="viewDetailAudio.html"
+            href="./audios.html"
           >
             <div
               class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
@@ -530,7 +525,7 @@
           </a>
           <a
             class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
-            href="viewDetailImage.html"
+            href="./images.html"
           >
             <div
               class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
@@ -551,7 +546,7 @@
           </a>
           <a
             class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
-            href="viewDetailBulletin.html"
+            href="./bulletins.html"
           >
             <div
               class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
@@ -576,7 +571,7 @@
     </div>
     <!-- End Database -->
 
-    <!-- Items -->
+    <!-- Start Items -->
     <div class="max-w-screen-xl mx-auto mt-6">
       <div class="flex justify-between bg-primary py-1 px-2 m-2 xl:m-0">
         <p class="text-lg text-white">New Books</p>
@@ -1210,11 +1205,12 @@
 
     <!-- End Footer -->
 
-    <!-- <div class="max-w-screen-xl mx-auto mt-6"></div> -->
-    <!-- <div class="h-96"></div> -->
-    <!-- Script -->
+    <!-- Start JS -->
     <script src="/js/darkMode.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <!-- End Script -->
+    <script src="/js/flowbite23.js"></script>
+    <script src="/js/pdfPopup.js"></script>
+    <script src="/js/glightbox.js"></script>
+    <script src="/js/glightbox.config.js"></script>
+    <!-- End JS -->
   </body>
 </html>

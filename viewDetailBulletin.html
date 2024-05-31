@@ -5,90 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ebooks</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class", // Enables dark mode based on class
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              primary: "#377eb4",
-              primaryHover: "#206fac",
-              warning: "#fab105",
-              warningHover: "#ffb915",
-            },
-          },
-        },
-      };
-    </script>
+    <!-- Start JS -->
+    <script src="js/tailwind34.js"></script>
+    <script src="js/tailwind.config.js"></script>
     <script src="js/darkModeHead.js"></script>
-    <!-- Swiper -->
-    <style>
-      .mySwiper {
-        width: 100%;
-        /* height: 100%; */
-        aspect-ratio: 30/8;
-      }
+    <!-- End Start JS -->
 
-      .swiper-slide-item {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide-img {
-        display: block;
-        width: 100%;
-        /* aspect-ratio: 21/9 */
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
-    <!-- PDF Viewer -->
-    <style>
-      .popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 9999;
-      }
-      .popup-content {
-        /* background-color: #fff; */
-        padding: 20px;
-        border-radius: 5px;
-        width: 90%;
-        height: 95%;
-        overflow: auto;
-      }
-      .close-btn {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 15px;
-        color: white;
-        cursor: pointer;
-      }
-      .close-btn-image {
-        width: 35px;
-        aspect-ratio: 1/1;
-        object-fit: contain;
-      }
-      .popup-content-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <!-- Start CSS -->
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/pdfview.css" />
+    <link rel="stylesheet" href="css/audioplayer.css" />
+    <link rel="stylesheet" href="/css/glightbox.css" />
+    <!-- end Start CSS -->
   </head>
   <body class="dark:bg-gray-800 max-w-[100vw] overflow-x-hidden">
     <!-- Head -->
@@ -670,7 +598,7 @@
                 class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
               >
                 <img
-                  class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
                   src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
                   alt="Image Description"
                 />
@@ -702,7 +630,7 @@
                 class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
               >
                 <img
-                  class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
                   src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
                   alt="Image Description"
                 />
@@ -736,7 +664,7 @@
                 class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
               >
                 <img
-                  class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
                   src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
                   alt="Image Description"
                 />
@@ -768,7 +696,7 @@
                 class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
               >
                 <img
-                  class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
                   src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
                   alt="Image Description"
                 />
@@ -802,7 +730,7 @@
                 class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
               >
                 <img
-                  class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
                   src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
                   alt="Image Description"
                 />
@@ -834,7 +762,205 @@
                 class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
               >
                 <img
-                  class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+                  alt="Image Description"
+                />
+              </div>
+
+              <div class="pt-2">
+                <h3
+                  data-tooltip-target="tooltip-bottom2"
+                  data-tooltip-placement="bottom"
+                  class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+                >
+                  <p class="line-clamp-1">
+                    A revamped and dynamic approach to yoga analytics
+                  </p>
+                </h3>
+
+                <div
+                  id="tooltip-bottom2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  2 revamped and dynamic approach to yoga analytics A revamped
+                  and dynamic approach to yoga analytics
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block" href="#">
+              <div
+                class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+              >
+                <img
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+                  alt="Image Description"
+                />
+              </div>
+
+              <div class="pt-2">
+                <h3
+                  data-tooltip-target="tooltip-bottom1"
+                  data-tooltip-placement="bottom"
+                  class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+                >
+                  <p class="line-clamp-1">ចំណងជើងខ្មែរ</p>
+                </h3>
+
+                <div
+                  id="tooltip-bottom1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  1 revamped and dynamic approach to yoga analytics A revamped
+                  and dynamic approach to yoga analytics
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block" href="#">
+              <div
+                class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+              >
+                <img
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+                  alt="Image Description"
+                />
+              </div>
+
+              <div class="pt-2">
+                <h3
+                  data-tooltip-target="tooltip-bottom2"
+                  data-tooltip-placement="bottom"
+                  class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+                >
+                  <p class="line-clamp-1">
+                    A revamped and dynamic approach to yoga analytics
+                  </p>
+                </h3>
+
+                <div
+                  id="tooltip-bottom2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  2 revamped and dynamic approach to yoga analytics A revamped
+                  and dynamic approach to yoga analytics
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block" href="#">
+              <div
+                class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+              >
+                <img
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+                  alt="Image Description"
+                />
+              </div>
+
+              <div class="pt-2">
+                <h3
+                  data-tooltip-target="tooltip-bottom1"
+                  data-tooltip-placement="bottom"
+                  class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+                >
+                  <p class="line-clamp-1">ចំណងជើងខ្មែរ</p>
+                </h3>
+
+                <div
+                  id="tooltip-bottom1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  1 revamped and dynamic approach to yoga analytics A revamped
+                  and dynamic approach to yoga analytics
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block" href="#">
+              <div
+                class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+              >
+                <img
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+                  alt="Image Description"
+                />
+              </div>
+
+              <div class="pt-2">
+                <h3
+                  data-tooltip-target="tooltip-bottom2"
+                  data-tooltip-placement="bottom"
+                  class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+                >
+                  <p class="line-clamp-1">
+                    A revamped and dynamic approach to yoga analytics
+                  </p>
+                </h3>
+
+                <div
+                  id="tooltip-bottom2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  2 revamped and dynamic approach to yoga analytics A revamped
+                  and dynamic approach to yoga analytics
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block" href="#">
+              <div
+                class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+              >
+                <img
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+                  src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+                  alt="Image Description"
+                />
+              </div>
+
+              <div class="pt-2">
+                <h3
+                  data-tooltip-target="tooltip-bottom1"
+                  data-tooltip-placement="bottom"
+                  class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+                >
+                  <p class="line-clamp-1">ចំណងជើងខ្មែរ</p>
+                </h3>
+
+                <div
+                  id="tooltip-bottom1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  1 revamped and dynamic approach to yoga analytics A revamped
+                  and dynamic approach to yoga analytics
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </a>
+
+            <a class="group block" href="#">
+              <div
+                class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+              >
+                <img
+                  class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
                   src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
                   alt="Image Description"
                 />
@@ -999,12 +1125,12 @@
 
     <!-- End Footer -->
 
-    <!-- <div class="max-w-screen-xl mx-auto mt-6"></div> -->
-    <!-- <div class="h-96"></div> -->
-    <!-- Script -->
+    <!-- Start JS -->
     <script src="/js/darkMode.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/js/flowbite23.js"></script>
     <script src="/js/pdfPopup.js"></script>
-    <!-- End Script -->
+    <script src="/js/glightbox.js"></script>
+    <script src="/js/glightbox.config.js"></script>
+    <!-- End JS -->
   </body>
 </html>

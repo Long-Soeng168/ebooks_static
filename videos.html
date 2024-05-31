@@ -18,15 +18,18 @@
     <link rel="stylesheet" href="/css/glightbox.css" />
     <!-- end Start CSS -->
   </head>
-  <body class="dark:bg-gray-800 max-w-[100vw] overflow-x-hidden">
+  <body class="dark:bg-gray-800 w-full overflow-x-hidden">
     <!-- Head -->
     <div>
       <div class="relative w-full bg-blue-400">
-        <img class="w-full max-h-[300px]" src="/images/newbanner.png" alt="" />
+        <!-- Banner Top -->
+        <img
+          class="w-full max-h-[300px] dark:saturate-500"
+          src="/images/newbanner.png"
+          alt=""
+        />
         <header class="absolute left-0 right-0 bottom-0 z-[30] bg-transparent">
-          <div
-            class="bg-primary-400 px-2 text-white dark:bg-gray-800 border-gray-200 z-20"
-          >
+          <div class="bg-primary-400 px-2 text-white border-gray-200 z-20">
             <div
               class="flex flex-wrap items-center justify-end max-w-screen-xl mx-auto"
             >
@@ -48,7 +51,7 @@
                   <button
                     id="theme-toggle"
                     type="button"
-                    class="text-gray-100 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2"
+                    class="text-gray-100 hover:text-gray-500 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2"
                   >
                     <svg
                       id="theme-toggle-dark-icon"
@@ -79,7 +82,7 @@
                   <a
                     href="http://aerd.rua.edu.kh/switch-language?locale=kh"
                     type="button"
-                    class="inline-flex items-center font-medium justify-center p-2.5 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                    class="inline-flex items-center font-medium justify-center p-2.5 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-white"
                   >
                     <img
                       class="w-5 h-5 rounded-full"
@@ -90,7 +93,7 @@
                   <a
                     href="http://aerd.rua.edu.kh/switch-language?locale=en"
                     type="button"
-                    class="bg-gray-100 dark:bg-gray-500 inline-flex items-center font-medium justify-center p-2.5 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                    class="bg-gray-100 dark:bg-gray-300 inline-flex items-center font-medium justify-center p-2.5 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-white"
                   >
                     <img
                       class="w-5 h-5 rounded-full"
@@ -131,7 +134,7 @@
                 id="navbar-default"
               >
                 <ul
-                  class="text-md flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-700"
+                  class="text-md flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
                 >
                   <li
                     class="border-b-white border-b-2 border-b-transparent hover:border-b-white transition-all"
@@ -238,7 +241,7 @@
     </div>
     <!-- End Head -->
 
-    <!-- Search -->
+    <!-- Start Search -->
     <div
       class="bg-gradient-to-r from-[#377eb4] dark:from-gray-600 to-transparent p-2"
     >
@@ -280,30 +283,37 @@
               >
                 <li>
                   <a
-                    href="#"
+                    href="./index.html"
                     class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Mockups</a
+                    >E-Publications</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="./viewDetailVideo.html"
                     class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Templates</a
+                    >Videos</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="./viewDetailAudio.html"
                     class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Design</a
+                    >Audios</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="./viewDetailImage.html"
                     class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Logos</a
+                    >Images</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./viewDetailBulletin.html"
+                    class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Bulletins</a
                   >
                 </li>
               </ul>
@@ -345,161 +355,208 @@
     </div>
     <!-- End Search -->
 
-    <!-- Detail -->
-    <div class="max-w-screen-xl mx-auto mt-6 px-2 lg:px-0">
-      <div class="min-[1000px]:flex">
-        <div class="flex flex-col items-center mb-6 mx-2 lg:mx-0">
-          <div class="max-w-[500px] flex flex-col gap-2 px-2">
-            <div class="relative max-w-[500px] rounded-md overflow-hidden">
-              <img
-                class="max-w-[500px] aspect-video object-cover rounded-md cursor-pointer"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg"
-                alt="Book Cover"
-              />
+    <!-- Slide Show -->
+    <div class="max-w-screen-xl mx-auto mt-2">
+      <swiper-container
+        autoplay="true"
+        autoplay-delay="2000"
+        speed="1000"
+        effect="slide"
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        space-between="30"
+        loop="true"
+      >
+        <swiper-slide class="swiper-slide-item">
+          <img
+            class="swiper-slide-img"
+            src="https://source.unsplash.com/random/?mountain&1"
+            alt=""
+          />
+        </swiper-slide>
+        <swiper-slide class="swiper-slide-item">
+          <img
+            class="swiper-slide-img"
+            src="https://source.unsplash.com/random/?mountain&2"
+            alt=""
+          />
+        </swiper-slide>
+        <swiper-slide class="swiper-slide-item">
+          <img
+            class="swiper-slide-img"
+            src="https://source.unsplash.com/random/?mountain&3"
+            alt=""
+          />
+        </swiper-slide>
+        <swiper-slide class="swiper-slide-item">
+          <img
+            class="swiper-slide-img"
+            src="https://source.unsplash.com/random/?mountain&4"
+            alt=""
+          />
+        </swiper-slide>
+        <swiper-slide class="swiper-slide-item">
+          <img
+            class="swiper-slide-img"
+            src="https://source.unsplash.com/random/?mountain&5"
+            alt=""
+          />
+        </swiper-slide>
+      </swiper-container>
 
-              <div class="absolute inset-0 size-full">
-                <div
-                  class="flex flex-col justify-center items-center size-full"
-                >
-                  <a
-                    class="glightbox3 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-                    href="https://youtu.be/DV2tAG5E-F0?si=v4dCW08HXoYI8FBZ"
-                  >
-                    <svg
-                      class="flex-shrink-0 size-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <polygon points="5 3 19 12 5 21 5 3" />
-                    </svg>
-                    Play Video
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="lg:ml-4">
-          <div
-            class="uppercase tracking-wide text-sm text-primary font-semibold"
-          >
-            Video
-          </div>
-          <h1
-            class="text-2xl text-gray-800 dark:text-gray-100 block mt-1 text-2xl leading-tight font-medium mb-2"
-          >
-            Your subtitle or any other text goes here Implementation of Title,
-            Subtitle and Author name as well as any other text you like to the
-            book cover design.
-          </h1>
-          <div class="flex flex-col gap-2">
-            <div class="flex nowrap">
-              <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
-              >
-                Author
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-200">
-                Long Soeng Co.
-              </p>
-            </div>
-            <div class="flex nowrap">
-              <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
-              >
-                Publisher
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-200">Routledge</p>
-            </div>
-            <div class="flex nowrap">
-              <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
-              >
-                Year
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-200">1988</p>
-            </div>
-            <div class="flex nowrap items-center">
-              <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
-              >
-                Page Count
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-200">322</p>
-            </div>
-            <div class="flex nowrap">
-              <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
-              >
-                Type
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-200">
-                សៀវភៅ / Book
-              </p>
-            </div>
-            <div class="flex nowrap">
-              <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
-              >
-                Language
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-200">English</p>
-            </div>
-            <div class="flex nowrap">
-              <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
-              >
-                Location
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-200">
-                London, England
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="lg:pl-2 xl:pl-0 mt-8">
-        <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
-          Description
-        </h2>
-        <p class="mt-2 text-gray-600 dark:text-gray-300">
-          Upgrade to paperback for just
-          <span class="font-bold">$100</span> extra. Get matching spine and back
-          cover for your book.
-          <a href="#" class="text-primary underline">Contact me</a> for
-          upgrading or drop in a line when you place the order.
-        </p>
-        <p class="mt-2 text-gray-600 dark:text-gray-300">
-          Purchase will include hi resolution
-          <span class="font-bold">eBook cover design</span> ready to upload to
-          Amazon Kindle, B&N Nook books and Smashwords.
-        </p>
-        <p class="mt-2 text-gray-600 dark:text-gray-300">
-          Implementation of Title, Subtitle and Author name as well as any other
-          text you like to the
-          <span class="font-bold">book cover design</span>.
-        </p>
-        <p class="mt-2 text-gray-600 dark:text-gray-300">
-          Exclusive
-          <a href="#" class="text-primary underline">premade book covers</a>,
-          designed using only Standard license royalty-free stock photos.
-          Copyrights to the design transferred to client for all purchases.
-        </p>
-      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </div>
-    <!-- End Detail -->
+    <!-- End Slide Show -->
+
+    <!-- Start Database -->
+    <div class="max-w-screen-xl mx-auto mt-6">
+      <p
+        class="text-2xl text-gray-700 dark:text-white p-2 xl:p-0 font-bold uppercase"
+      >
+        Databases
+      </p>
+      <!-- Icon Blocks -->
+      <div class="">
+        <div
+          class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 items-center gap-4"
+        >
+          <a
+            class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
+            href="#"
+          >
+            <div
+              class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
+            >
+              <img
+                src="/icons/catalog.png"
+                alt=""
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="mt-1">
+              <h3
+                class="group-hover:text-gray-600 text-md lg:text-lg whitespace-nowrap font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-50"
+              >
+                Catalog
+              </h3>
+            </div>
+          </a>
+          <a
+            class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
+            href="./index.html"
+          >
+            <div
+              class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
+            >
+              <img
+                src="/icons/epublication.png"
+                alt=""
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="mt-1">
+              <h3
+                class="group-hover:text-gray-600 text-md lg:text-lg whitespace-nowrap font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-50"
+              >
+                E-Publications
+              </h3>
+            </div>
+          </a>
+          <a
+            class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
+            href="./videos.html"
+          >
+            <div
+              class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
+            >
+              <img
+                src="/icons/video.png"
+                alt=""
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="mt-1">
+              <h3
+                class="group-hover:text-gray-600 text-md lg:text-lg whitespace-nowrap font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-50"
+              >
+                Videos
+              </h3>
+            </div>
+          </a>
+          <a
+            class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
+            href="./audios.html"
+          >
+            <div
+              class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
+            >
+              <img
+                src="/icons/audio.png"
+                alt=""
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="mt-1">
+              <h3
+                class="group-hover:text-gray-600 text-md lg:text-lg whitespace-nowrap font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-50"
+              >
+                Audio
+              </h3>
+            </div>
+          </a>
+          <a
+            class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
+            href="./images.html"
+          >
+            <div
+              class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
+            >
+              <img
+                src="/icons/image.png"
+                alt=""
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="mt-1">
+              <h3
+                class="group-hover:text-gray-600 text-md lg:text-lg whitespace-nowrap font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-50"
+              >
+                Image
+              </h3>
+            </div>
+          </a>
+          <a
+            class="group p-4 flex flex-col justify-center items-center hover:bg-gray-100 rounded-xl dark:hover:bg-gray-600"
+            href="./bulletins.html"
+          >
+            <div
+              class="flex justify-center items-center h-20 aspect-square object-contain rounded-xl"
+            >
+              <img
+                src="/icons/bulletin.png"
+                alt=""
+                class="h-full object-contain"
+              />
+            </div>
+            <div class="mt-1">
+              <h3
+                class="group-hover:text-gray-600 text-md lg:text-lg whitespace-nowrap font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-50"
+              >
+                Bulletin / News
+              </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- End Icon Blocks -->
+    </div>
+    <!-- End Database -->
 
     <!-- Start Items -->
     <div class="max-w-screen-xl mx-auto mt-6">
       <div class="flex justify-between bg-primary py-1 px-2 m-2 xl:m-0">
-        <p class="text-lg text-white">Related</p>
+        <p class="text-lg text-white">New Videos</p>
         <a
           class="text-lg text-white flex items-center gap-2 hover:underline hover:translate-x-2 transition-all cursor-pointer"
         >
@@ -509,10 +566,10 @@
       </div>
       <!-- Card Grid -->
       <div
-        class="py-2 lg:py-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-2 sm:gap-2 md:gap-4 lg:gap-6 m-2 xl:m-0"
+        class="py-2 lg:py-4 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 sm:gap-2 md:gap-4 lg:gap-4 m-2 xl:m-0"
       >
         <!-- Card -->
-        <a class="group block" href="#">
+        <a class="group block" href="view-detail.html">
           <div
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
@@ -544,7 +601,7 @@
           </div>
         </a>
 
-        <a class="group block" href="#">
+        <a class="group block" href="view-detail.html">
           <div
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
@@ -578,7 +635,7 @@
           </div>
         </a>
 
-        <a class="group block" href="#">
+        <a class="group block" href="view-detail.html">
           <div
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
@@ -610,7 +667,271 @@
           </div>
         </a>
 
-        <a class="group block" href="#">
+        <a class="group block" href="view-detail.html">
+          <div
+            class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+          >
+            <img
+              class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              alt="Image Description"
+            />
+          </div>
+
+          <div class="pt-2">
+            <h3
+              data-tooltip-target="tooltip-bottom2"
+              data-tooltip-placement="bottom"
+              class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+            >
+              <p class="line-clamp-1">
+                A revamped and dynamic approach to yoga analytics
+              </p>
+            </h3>
+
+            <div
+              id="tooltip-bottom2"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              2 revamped and dynamic approach to yoga analytics A revamped and
+              dynamic approach to yoga analytics
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="group block" href="view-detail.html">
+          <div
+            class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+          >
+            <img
+              class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              alt="Image Description"
+            />
+          </div>
+
+          <div class="pt-2">
+            <h3
+              data-tooltip-target="tooltip-bottom1"
+              data-tooltip-placement="bottom"
+              class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+            >
+              <p class="line-clamp-1">ចំណងជើងខ្មែរ</p>
+            </h3>
+
+            <div
+              id="tooltip-bottom1"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              1 revamped and dynamic approach to yoga analytics A revamped and
+              dynamic approach to yoga analytics
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="group block" href="view-detail.html">
+          <div
+            class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+          >
+            <img
+              class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              alt="Image Description"
+            />
+          </div>
+
+          <div class="pt-2">
+            <h3
+              data-tooltip-target="tooltip-bottom2"
+              data-tooltip-placement="bottom"
+              class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+            >
+              <p class="line-clamp-1">
+                A revamped and dynamic approach to yoga analytics
+              </p>
+            </h3>
+
+            <div
+              id="tooltip-bottom2"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              2 revamped and dynamic approach to yoga analytics A revamped and
+              dynamic approach to yoga analytics
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="group block" href="view-detail.html">
+          <div
+            class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+          >
+            <img
+              class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              alt="Image Description"
+            />
+          </div>
+
+          <div class="pt-2">
+            <h3
+              data-tooltip-target="tooltip-bottom1"
+              data-tooltip-placement="bottom"
+              class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+            >
+              <p class="line-clamp-1">ចំណងជើងខ្មែរ</p>
+            </h3>
+
+            <div
+              id="tooltip-bottom1"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              1 revamped and dynamic approach to yoga analytics A revamped and
+              dynamic approach to yoga analytics
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="group block" href="view-detail.html">
+          <div
+            class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+          >
+            <img
+              class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              alt="Image Description"
+            />
+          </div>
+
+          <div class="pt-2">
+            <h3
+              data-tooltip-target="tooltip-bottom2"
+              data-tooltip-placement="bottom"
+              class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+            >
+              <p class="line-clamp-1">
+                A revamped and dynamic approach to yoga analytics
+              </p>
+            </h3>
+
+            <div
+              id="tooltip-bottom2"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              2 revamped and dynamic approach to yoga analytics A revamped and
+              dynamic approach to yoga analytics
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="group block" href="view-detail.html">
+          <div
+            class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+          >
+            <img
+              class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              alt="Image Description"
+            />
+          </div>
+
+          <div class="pt-2">
+            <h3
+              data-tooltip-target="tooltip-bottom1"
+              data-tooltip-placement="bottom"
+              class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+            >
+              <p class="line-clamp-1">ចំណងជើងខ្មែរ</p>
+            </h3>
+
+            <div
+              id="tooltip-bottom1"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              1 revamped and dynamic approach to yoga analytics A revamped and
+              dynamic approach to yoga analytics
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="group block" href="view-detail.html">
+          <div
+            class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+          >
+            <img
+              class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              alt="Image Description"
+            />
+          </div>
+
+          <div class="pt-2">
+            <h3
+              data-tooltip-target="tooltip-bottom2"
+              data-tooltip-placement="bottom"
+              class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+            >
+              <p class="line-clamp-1">
+                A revamped and dynamic approach to yoga analytics
+              </p>
+            </h3>
+
+            <div
+              id="tooltip-bottom2"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              2 revamped and dynamic approach to yoga analytics A revamped and
+              dynamic approach to yoga analytics
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="group block" href="view-detail.html">
+          <div
+            class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
+          >
+            <img
+              class="w-full aspect-[16/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              alt="Image Description"
+            />
+          </div>
+
+          <div class="pt-2">
+            <h3
+              data-tooltip-target="tooltip-bottom1"
+              data-tooltip-placement="bottom"
+              class="relative inline-block font-medium text-md text-black before:absolute before:bottom-[-0.1rem] before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100 dark:text-white"
+            >
+              <p class="line-clamp-1">ចំណងជើងខ្មែរ</p>
+            </h3>
+
+            <div
+              id="tooltip-bottom1"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              1 revamped and dynamic approach to yoga analytics A revamped and
+              dynamic approach to yoga analytics
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="group block" href="view-detail.html">
           <div
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
@@ -647,6 +968,95 @@
       <!-- End Card Grid -->
     </div>
     <!-- End Items -->
+
+    <!-- Pagination -->
+    <div class="max-w-screen-xl mx-auto mt-6">
+      <nav
+        role="navigation"
+        aria-label="Pagination Navigation"
+        class="flex items-center justify-between m-2 xl:m-0"
+      >
+        <div class="flex justify-between flex-1 sm:hidden">
+          <span
+            class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5 rounded-md"
+          >
+            « Previous
+          </span>
+
+          <a
+            href="#"
+            class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+          >
+            Next »
+          </a>
+        </div>
+
+        <div
+          class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between"
+        >
+          <div>
+            <p class="text-sm text-gray-700 leading-5">
+              Showing
+              <span class="font-medium">1</span>
+              to
+              <span class="font-medium">8</span>
+              of
+              <span class="font-medium">11</span>
+              results
+            </p>
+          </div>
+
+          <div>
+            <span class="relative z-0 inline-flex shadow-sm rounded-md">
+              <span aria-disabled="true" aria-label="&amp;laquo; Previous">
+                <span
+                  class="relative inline-flex items-center px-2 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default rounded-l-md leading-5"
+                  aria-hidden="true"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </span>
+
+              <span aria-current="page">
+                <span
+                  class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5"
+                  >1</span
+                >
+              </span>
+              <a
+                href="#"
+                class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+                aria-label="Go to page 2"
+              >
+                2
+              </a>
+
+              <a
+                href="#"
+                rel="next"
+                class="relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-r-md leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
+                aria-label="Next &amp;raquo;"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End Pagination -->
 
     <!-- Footer -->
     <div class="bg-primary text-white dark:bg-gray-900">
