@@ -48,45 +48,40 @@
         object-fit: cover;
       }
     </style>
-    <!-- PDF Viewer -->
+
+    <!-- Audio Player -->
     <style>
-      .popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 9999;
+      /* Custom styles */
+      .audio-container {
+        max-width: 400px;
+        margin: 0 auto;
       }
-      .popup-content {
-        /* background-color: #fff; */
+
+      .audio-player {
+        background-color: #f3f4f6;
+        border-radius: 10px;
         padding: 20px;
-        border-radius: 5px;
-        width: 90%;
-        height: 95%;
-        overflow: auto;
       }
-      .close-btn {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 15px;
-        color: white;
-        cursor: pointer;
-      }
-      .close-btn-image {
-        width: 35px;
-        aspect-ratio: 1/1;
-        object-fit: contain;
-      }
-      .popup-content-container {
+
+      .audio-controls {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        height: 100%;
+        margin-top: 20px;
+      }
+
+      .audio-controls button {
+        background-color: #4b5563;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .audio-controls button:hover {
+        background-color: #6b7280;
       }
     </style>
   </head>
@@ -95,7 +90,6 @@
     <div>
       <div class="relative w-full bg-blue-400">
         <img class="w-full max-h-[300px]" src="/images/newbanner.png" alt="" />
-
         <header class="absolute left-0 right-0 bottom-0 z-[30] bg-transparent">
           <div
             class="bg-primary-400 px-2 text-white dark:bg-gray-800 border-gray-200 z-20"
@@ -220,7 +214,7 @@
                     class="border-b-2 border-b-transparent hover:border-b-white transition-all"
                   >
                     <a
-                      href="#"
+                      href="http://aerd.rua.edu.kh/news-event"
                       class="block py-2 px-3 rounded md:border-0 md:p-0 dark:text-white"
                     >
                       News &amp; Events
@@ -230,7 +224,7 @@
                     class="border-b-2 border-b-transparent hover:border-b-white transition-all"
                   >
                     <a
-                      href="#"
+                      href="http://aerd.rua.edu.kh/contact"
                       class="block py-2 px-3 rounded md:border-0 md:p-0 dark:text-white"
                     >
                       Contact
@@ -291,7 +285,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="http://aerd.rua.edu.kh/news-event"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <span class="ms-3">News &amp; Events</span>
@@ -299,7 +293,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="http://aerd.rua.edu.kh/contact"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <span class="ms-3">Contact</span>
@@ -420,127 +414,35 @@
 
     <!-- Detail -->
     <div class="max-w-screen-xl mx-auto mt-6 px-2 lg:px-0">
-      <div class="min-[840px]:flex">
-        <div class="px-2 lg-px-0 mr-2 flex flex-col items-center mb-6">
-          <div class="max-w-[400px] flex flex-col gap-2">
+      <div class="min-[1000px]:flex">
+        <div class="mx-2 lg:mx-0 mr-2 flex flex-col items-center mb-6">
+          <div class="max-w-[500px] flex flex-col gap-2 px-2 lg:px-0">
             <img
-              class="max-w-[400px] aspect-[6/9] object-cover rounded-md cursor-pointer"
-              src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
+              class="max-w-[500px] h-auto object-cover rounded-md cursor-pointer"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg"
               alt="Book Cover"
             />
-            <div class="grid grid-cols-4 gap-2">
-              <img
-                class="w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
-                src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
-              />
-              <img
-                class="w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
-                src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
-              />
-              <img
-                class="w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
-                src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
-              />
-              <div
-                class="relative w-full aspect-[1/1] hover:scale-110 transition-transform duration-500 ease-in-out"
-              >
-                <button
-                  class="absolute w-full h-full bg-gray-900/60 hover:bg-gray-900/20 transition-all duration-300 rounded-lg flex items-center justify-center"
-                >
-                  <span class="text-xl font-medium text-white">+7</span>
-                  <div
-                    id="download-image"
-                    role="tooltip"
-                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-                  >
-                    Download image
-                    <div class="tooltip-arrow" data-popper-arrow></div>
-                  </div>
-                </button>
-                <img
-                  src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
-                  class="rounded-lg w-full aspect-[1/1]"
+
+            <!-- Audio -->
+            <div
+              class="audio-player bg-white shadow-lg border p-4 rounded-lg dark:bg-gray-500 dark:border-none w-full min-w-[400px]"
+            >
+              <audio controls class="w-full">
+                <source
+                  src="https://file-examples.com/storage/fe9037cdb6665870598c2d1/2017/11/file_example_MP3_700KB.mp3"
+                  type="audio/mpeg"
                 />
-              </div>
+                Your browser does not support the audio element.
+              </audio>
             </div>
-            <!-- Action Button -->
-            <div class="w-full flex rounded-md shadow-sm gap-2" role="group">
-              <button
-                type="button"
-                class="flex-1 inline-flex gap-2 items-center justify-center px-4 py-1 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-md hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-                onclick="openPdfPopup('/files/pdf_file.pdf')"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-eye"
-                >
-                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-                <div>
-                  <p class="whitespace-nowrap">Read PDF</p>
-                  <p class="text-center">(54345)</p>
-                </div>
-              </button>
-
-              <!-- Popup Container -->
-              <div class="popup-overlay" id="popupOverlay">
-                <div class="popup-content-container">
-                  <div class="popup-content">
-                    <span class="close-btn" onclick="closePdfPopup()">
-                      <img
-                        src="/icons/cancel.png"
-                        alt=""
-                        class="close-btn-image"
-                      />
-                    </span>
-                    <embed id="pdfEmbed" src="" width="100%" height="100%" />
-                  </div>
-                </div>
-              </div>
-
-              <a
-                href="/files/pdf_file.pdf"
-                download
-                class="flex-1 inline-flex gap-2 justify-center items-center px-4 py-1 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-md hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-arrow-down-to-line"
-                >
-                  <path d="M12 17V3" />
-                  <path d="m6 11 6 6 6-6" />
-                  <path d="M19 21H5" />
-                </svg>
-                <div>
-                  <p class="whitespace-nowrap">Download PDF</p>
-                  <p class="text-center">(9567)</p>
-                </div>
-              </a>
-            </div>
+            <!-- End Audio -->
           </div>
         </div>
-        <div>
+        <div class="lg:ml-4">
           <div
             class="uppercase tracking-wide text-sm text-primary font-semibold"
           >
-            E-Book
+            Audio
           </div>
           <h1
             class="text-2xl text-gray-800 dark:text-gray-100 block mt-1 text-2xl leading-tight font-medium mb-2"
@@ -558,16 +460,6 @@
               </p>
               <p class="text-sm text-gray-600 dark:text-gray-200">
                 Long Soeng Co.
-              </p>
-            </div>
-            <div class="flex nowrap">
-              <p
-                class="w-[123px] uppercase tracking-wide text-sm text-gray-500 dark:text-gray-300 font-semibold border-r border-gray-600 dark:border-gray-300 pr-5 mr-5"
-              >
-                ISBN
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-200">
-                9780415002240
               </p>
             </div>
             <div class="flex nowrap">
@@ -678,7 +570,7 @@
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
             <img
-              class="w-full aspect-[6/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
               src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
               alt="Image Description"
             />
@@ -710,7 +602,7 @@
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
             <img
-              class="w-full aspect-[6/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
               src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
               alt="Image Description"
             />
@@ -744,7 +636,7 @@
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
             <img
-              class="w-full aspect-[6/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
               src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
               alt="Image Description"
             />
@@ -776,7 +668,7 @@
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
             <img
-              class="w-full aspect-[6/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
               src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
               alt="Image Description"
             />
@@ -810,7 +702,7 @@
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
             <img
-              class="w-full aspect-[6/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
               src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
               alt="Image Description"
             />
@@ -842,7 +734,7 @@
             class="w-full overflow-hidden bg-gray-100 rounded-md dark:bg-neutral-800"
           >
             <img
-              class="w-full aspect-[6/9] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
+              class="w-full aspect-[4/3] group-hover:scale-110 transition-transform duration-500 ease-in-out object-cover rounded-md"
               src="https://www.creativeparamita.com/wp-content/uploads/2022/03/the-mountain.jpg"
               alt="Image Description"
             />
@@ -1008,7 +900,6 @@
     <!-- <div class="h-96"></div> -->
     <!-- Script -->
     <script src="/js/darkMode.js"></script>
-    <script src="/js/pdfPopup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <!-- End Script -->
   </body>

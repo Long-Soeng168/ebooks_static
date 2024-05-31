@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Player</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles */
+      .audio-container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .audio-player {
+        background-color: #f3f4f6;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .audio-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .audio-controls button {
+        background-color: #4b5563;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .audio-controls button:hover {
+        background-color: #6b7280;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="audio-container mt-10">
+      <h1 class="text-3xl font-bold text-center mb-6">Audio Player</h1>
+
+      <div class="audio-player bg-white shadow-lg border p-8 rounded-lg">
+        <!-- <div>
+          <img
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+            alt=""
+          />
+        </div> -->
+        <audio controls class="w-full">
+          <source
+            src="https://file-examples.com/storage/fe9037cdb6665870598c2d1/2017/11/file_example_MP3_700KB.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
