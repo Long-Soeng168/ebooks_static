@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open PDF in Pop-up</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        /* padding: 20px; */
+        text-align: center;
+      }
+      .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+      }
+      .popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 85%;
+        /* height: 95%; */
+        aspect-ratio: 16/9;
+        overflow: auto;
+      }
+      .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        cursor: pointer;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Open PDF in Pop-up</h1>
+    <button onclick="openPdfPopup()">Open PDF</button>
+
+    <!-- Popup Container -->
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePdfPopup()">X</span>
+        <!-- <embed
+          id="pdfEmbed"
+          src="/files/pdf_file.pdf#toolbar=0"
+          width="100%"
+          height="100%"
+        /> -->
+        <embed
+          id="pdfEmbed"
+          src="/files/pdf_file.pdf"
+          width="100%"
+          height="100%"
+        />
+      </div>
+    </div>
+
+    <script>
+      function openPdfPopup() {
+        var popupOverlay = document.getElementById("popupOverlay");
+        popupOverlay.style.display = "block";
+      }
+
+      function closePdfPopup() {
+        var popupOverlay = document.getElementById("popupOverlay");
+        popupOverlay.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
